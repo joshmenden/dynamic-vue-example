@@ -3,7 +3,7 @@
     <v-content>
       <a-galaxy-far-far-away/>
     </v-content>
-    <v-footer :fixed="fixed" app>
+    <v-footer :fixed="true" app>
       <span>A Vue.js Meetup Presentation</span>
     </v-footer>
   </v-app>

@@ -1,13 +1,29 @@
 <template>
   <div>
-    <div
-      v-for="character in characters"
-      :key="character.name"
-    >
-      <component
-        :is="character.type.toLowerCase()"
-      />
-    </div>
+    <v-layout row>
+      <v-flex
+        xs4
+        offset-xs4
+      >
+        <v-flex
+          text-xs-center
+          class="display-2 my-5"
+        >
+          A Galaxy Far Far Away...
+        </v-flex>
+        <div
+          v-for="(character, index) in characters"
+          :key="character.name"
+        >
+          <component
+            :is="character.type.toLowerCase()"
+            :character="character"
+            :index="index"
+            class="my-3"
+          />
+        </div>
+      </v-flex>
+    </v-layout>
   </div>
 </template>
 
@@ -25,7 +41,16 @@ export default {
   data () {
     return {
       characters: [
-        { name: 'Luke Skywalker', type: 'Jedi', age: 55 }
+        { type: 'Jedi', name: 'Luke Skywalker', saberColor: 'blue', wiseQuote: 'Amazing...Every Word of What You Just Said Was Wrong.' },
+        { name: 'Chewbacca', type: 'Wookie' },
+        { type: 'Sith', name: 'Darth Sidious', padawanName: 'Anakin', modeOfDeath: 'Did he though?' },
+        { type: 'Jedi', name: 'Yoda', saberColor: 'green', wiseQuote: 'Fear is the path to the dark side. Fear leads to anger. Anger leads to hate. Hate leads to suffering.'},
+        { type: 'Jedi', name: 'Obi-Wan Kenobi', saberColor: 'blue', wiseQuote: 'Only a Sith deals in absolutes!'},
+        { name: 'Ethan', type: 'Ewok' },
+        { name: 'Penny', type: 'Porg' },
+        { type: 'Sith', name: 'Supreme Leader Snoke', padawanName: 'Kylo Ren', modeOfDeath: 'Cut sideways by a lightsaber.' },
+        { name: 'Paul', type: 'Porg' },
+        { name: 'Wallace', type: 'Wookie' },
       ]
     }
   }
