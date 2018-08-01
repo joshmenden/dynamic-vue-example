@@ -33,7 +33,7 @@ import CharacterProps from './characterProps.js'
 export default {
   name: 'Sith',
   props: {
-    ...CharacterProps
+    ...CharacterProps,
   }
 
 }

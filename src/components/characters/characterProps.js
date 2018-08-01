@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   character: {
     type: Object,
     default: () => {},

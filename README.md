@@ -1,6 +1,7 @@
-# dynamic-vue-example
+# Dynamic Components & File Reusability in Vue.js
 
-> Arbitrary example displaying vue dynamic components
+> This repo is meant to be an introduction to using Dyanmic components, Mixins, and Javascript Spread syntax to make your Vue project
+> more maintainable and readable.
 
 ## Pros to Dynamic Components:
 
@@ -11,22 +12,5 @@
 
 ## Cons to Dynamic Components:
 - Abstraction of Code (can be difficult to follow)
+- Defeats purpose of single file components
 - Unecessarily large number of files
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
