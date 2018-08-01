@@ -15,8 +15,32 @@
           v-for="(character, index) in characters"
           :key="character.name"
         >
-          <component
-            :is="character.type.toLowerCase()"
+          <jedi
+            v-if="character.type.toLowerCase() === 'jedi'"
+            :character="character"
+            :index="index"
+            class="my-3"
+          />
+          <sith
+            v-if="character.type.toLowerCase() === 'sith'"
+            :character="character"
+            :index="index"
+            class="my-3"
+          />
+          <wookie
+            v-if="character.type.toLowerCase() === 'wookie'"
+            :character="character"
+            :index="index"
+            class="my-3"
+          />
+          <ewok
+            v-if="character.type.toLowerCase() === 'ewok'"
+            :character="character"
+            :index="index"
+            class="my-3"
+          />
+          <porg
+            v-if="character.type.toLowerCase() === 'porg'"
             :character="character"
             :index="index"
             class="my-3"
