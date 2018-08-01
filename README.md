@@ -2,14 +2,14 @@
 
 > Arbitrary example displaying vue dynamic components
 
-#Pros to Dynamic Components:
+## Pros to Dynamic Components:
 
 - Remove duplicate code
 - Make template easily readable
 - Good for "separation of responsibilities"
 - Easy to debug
 
-#Cons to Dynamic Components:
+## Cons to Dynamic Components:
 - Abstraction of Code (can be difficult to follow)
 - Unecessarily large number of files
 
