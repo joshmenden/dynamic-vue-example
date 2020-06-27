@@ -1,5 +1,7 @@
 # Dynamic Components & File Reusability in Vue.js
 
+Presented at the Utah Vue.js Meetup on 8/1/2018
+
 > This repo is meant to be an introduction to using Dyanmic components, Mixins, and Javascript Spread syntax to make your Vue project
 > more maintainable and readable. This project displays an arbitrary list of Star Wars characters each separated by their character
 > type (e.g. 'Sith', 'Jedi', 'Ewok' etc). Follow the steps below to see a progression of how I make the code more reusable.
